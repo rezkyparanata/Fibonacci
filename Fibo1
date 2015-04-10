@@ -10,13 +10,16 @@ public class DeretFibonacci {
         Scanner deret = new Scanner (System.in);
         System.out.println("Masukan deret Fibonacci :");
         int angka=deret.nextInt();
+        int tfibo;
      
         for(int i=0;i<=angka;i++)
         {
             fib=fibonacci(i);
             System.out.println(fib+", ");
+            tfibo=tfibo+fib;
            
         }  
+        System.out.println("total "+tfibo);
 
     }
     
